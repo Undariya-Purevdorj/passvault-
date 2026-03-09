@@ -1,56 +1,57 @@
-# PassVault — Password Manager
+# passVault — password manager
 
-A browser-based password manager built as a computer security project. Demonstrates core security concepts including encryption, password strength analysis, and cryptographically secure random generation.
+a browser-based password manager built as a computer security project. 
+demonstrates core security concepts including encryption, password strength analysis, and cryptographically secure random generation.
 
 ---
 
-## Features
+## features
 
-- **Master password gate** — vault is locked until authenticated
+- **master password gate** — vault is locked until authenticated
 - **XOR encryption** — passwords are encrypted in memory using a master key
-- **Password strength analysis** — scores passwords on length, complexity, and character variety
-- **Secure password generator** — uses `crypto.getRandomValues()` (not `Math.random()`) for true randomness
-- **Add, edit, delete, search** credentials
-- **Show/hide and copy** passwords with one click
+- **password strength analysis** — scores passwords on length, complexity, and character variety
+- **secure password generator** — uses `crypto.getRandomValues()` (not `Math.random()`) for true randomness
+- **add, edit, delete, search** credentials
+- **show/hide and copy** passwords with one click
 
 ---
 
-## Security Concepts Demonstrated
+## security concepts demonstrated
 
-| Concept | Implementation |
+| concept | implementation |
 |---|---|
-| Symmetric encryption | XOR cipher with master key |
-| Password entropy | Strength scoring across 5 criteria |
-| Secure randomness | Web Crypto API (`getRandomValues`) |
-| Zero-knowledge design | No data ever leaves the browser |
+| symmetric encryption | XOR cipher with master key |
+| password entropy | strength scoring across 5 criteria |
+| secure randomness | web crypto API (`getRandomValues`) |
+| zero-knowledge design | no data ever leaves the browser |
 
 ---
 
-## Privacy by Design
+## privacy by design
 
-This app stores all data **in memory only** — nothing is written to a server, database, or local storage. Every session starts fresh. This is an intentional design choice: there is no attack surface for a data breach because no data is ever persisted.
+this app stores all data **in memory only** — nothing is written to a server, database, or local storage. every session starts fresh. this is an intentional design choice: there is no attack surface for a data breach because no data is ever persisted.
 
-> **Future improvement:** Persistent storage could be added using `localStorage` with AES-256 encryption via the Web Crypto API, or a backend with hashed user accounts.
-
----
-
-## Tech Stack
-
-- Vanilla HTML, CSS, JavaScript — no frameworks, no dependencies
-- Web Crypto API for password generation
-- Deployed via GitHub Pages
+> **future improvement:** persistent storage could be added using `localStorage` with AES-256 encryption via the Web Crypto API, or a backend with hashed user accounts.
 
 ---
 
-## Live Demo
+## tech stack
+
+- vanilla HTML, CSS, JavaScript — no frameworks, no dependencies
+- web crypto API for password generation
+- deployed via GitHub Pages
+
+---
+
+## live demo
 
 [https://undariya-purevdorj.github.io/passvault-/](https://undariya-purevdorj.github.io/passvault-/)
 
 ---
 
-## Run Locally
+## run locally
 
-No build steps needed. Just open `index.html` in any browser.
+no build steps needed. just open `index.html` in any browser.
 
 ```bash
 git clone https://github.com/Undariya-Purevdorj/passvault-.git
