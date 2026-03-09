@@ -62,4 +62,4 @@ open index.html
 
 ## Author
 
-Undariya Purevdorj — Computer Security, York University (Lassonde School of Engineering)
+me
